@@ -9,7 +9,7 @@ from random import randint
 list = [randint (0, 50) for _ in range(randint(10, 15))]
 print(list)
 
-n1, n2 = map(int, input('Введите нижнее и верхнее значение диапазона через пробел').split())
+n1, n2 = map(int, input('Введите нижнее и верхнее значение диапазона через пробел ').split())
 
-res_list = [i for i in range(len(list)) if n1 < i < n2 ]
-print (res_list)
+index_list = [i for i in range(len(list)) if n1 < list[i] < n2 ]
+print (index_list)
